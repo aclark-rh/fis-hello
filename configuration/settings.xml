@@ -22,7 +22,22 @@
 
   <profiles>
     <profile>
-      <id>fusesource.repo</id>
+      <id>local.mirror.repo</id>
+      <repositories>
+        <repository>
+          <id>allrh.m2</id>
+          <name>All RedHat Repos</name>
+          <url>http://aclark-osx:8081/artifactory/list/All-RedHat-Repos</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
+      </repositories>
+      <!--
       <repositories>
         <repository>
           <id>fusesource.m2</id>
@@ -61,6 +76,7 @@
           </releases>
         </repository>
       </repositories>
+      -->
       <pluginRepositories>
         <pluginRepository>
           <id>fusesource.m2</id>
@@ -103,7 +119,7 @@
   </profiles>
 
   <activeProfiles>
-    <activeProfile>fusesource.repo</activeProfile>
+    <activeProfile>local.mirror.repo</activeProfile>
   </activeProfiles>
 
 </settings>
