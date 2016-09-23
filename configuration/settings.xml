@@ -36,6 +36,18 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </repository>
+        <repository>
+          <id>mvn.central.m2</id>
+          <name>Maven Central</name>
+          <url>http://aclark-osx:8081/artifactory/list/Maven-Central/</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
       </repositories>
       <!--
       <repositories>
