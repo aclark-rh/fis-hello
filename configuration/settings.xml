@@ -91,6 +91,33 @@
       -->
       <pluginRepositories>
         <pluginRepository>
+          <id>allrh.m2</id>
+          <name>All RedHat Repos</name>
+          <url>http://aclark-osx:8081/artifactory/list/All-RedHat-Repos</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </pluginRepository>
+        <pluginRepository>
+          <id>mvn.central.m2</id>
+          <name>Maven Central</name>
+          <url>http://aclark-osx:8081/artifactory/list/Maven-Central/</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </pluginRepository>
+      </pluginRepositories>
+      <!--
+      <pluginRepositories>
+        <pluginRepository>
           <id>fusesource.m2</id>
           <name>FuseSource Community Release Repository</name>
           <url>https://repo.fusesource.com/nexus/content/groups/public</url>
@@ -127,6 +154,7 @@
           </releases>
         </pluginRepository>
       </pluginRepositories>
+      -->
     </profile>
   </profiles>
 
